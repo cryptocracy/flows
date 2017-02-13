@@ -8,6 +8,7 @@ The server needs to have node-red, redis, and blockstack installed.
 # required nodes:
 
 node-red-contrib-redis
+
 node-red-contrib-auth
 
 # warning:

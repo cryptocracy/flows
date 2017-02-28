@@ -1,5 +1,5 @@
 # Flow
-This is the node-red flow for a Cryptocracy preferred server node
+This repo is basically just a node-red flow for you to import into your node-red instance to turn it into a Preferred Server node
 
 # Requirements:
 

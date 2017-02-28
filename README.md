@@ -1,16 +1,16 @@
-# flows
-The node-red flows for a Cryptocracy node server
+# Flow
+This is the node-red flow for a Cryptocracy preferred server node
 
-# required software:
+# Requirements:
 
 The server needs to have node-red, redis, and blockstack installed.
 
-# required nodes:
+# Required nodes:
 
 node-red-contrib-redis
 
 node-red-contrib-auth
 
-# warning:
+# Warning:
 
-For these api end points to work, the client application must beable to 'see' the path of the server.
+For these api end points to be used, the client application (Souq) must have the path to the server saved in its configuration.

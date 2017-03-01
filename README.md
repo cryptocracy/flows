@@ -31,9 +31,9 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 `$ cd $HOME/.node-red`  // change directory
 
-`$ sudo npm install node-red-contrib-redis`  // install additional node
+`node-red-contrib-redis`  // install additional node via node-red panel
 
-`$ sudo npm install node-red-contrib-auth`   // install additional node
+`node-red-contrib-auth`   // install additional node via node-red panel
 
 Run Node-Red Manually or with Forever
 

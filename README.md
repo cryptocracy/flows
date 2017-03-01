@@ -21,25 +21,35 @@ For these api end points to be used, the client application (Souq) must have the
 
 This guide assumes that you are using Ubuntu 16.04. Before you begin, you should have a non-root user account with `sudo` privileges set up on your system. (THIS IS STILL BEING DOCUMENTED DO NOT USE YET)
 
-`$ sudo apt-get update` then `y`
+`$ sudo apt-get update` then `y`  // update 
 
-`$ sudo apt-get install nodejs` then `y`
+`$ sudo apt-get install nodejs` then `y`  // install nodejs
 
-`$ sudo apt-get install npm` then `y`
+`$ sudo apt-get install npm` then `y`  // install npm
 
-`$ sudo npm install -g node-red` then `y`
+`$ sudo npm install -g node-red` then `y`  // install node-red
 
-`$ cd $HOME/.node-red` 
+`$ cd $HOME/.node-red`  // change directory
 
-`$ sudo npm install node-red-contrib-redis`
+`$ sudo npm install node-red-contrib-redis`  // install additional node
 
-`$ sudo npm install node-red-contrib-auth`
+`$ sudo npm install node-red-contrib-auth`   // install additional node
 
-`$ sudo npm install forever -g`
+Run Node-Red Manually or with Forever
 
-(setup forever and autostart on reboot for node-red - `node-red` to start)
+`$ node-red`  // to start manually  
 
-`$ cd ..` (move up a folder)
+or install `forever` and invoke `red.js` with it
+
+`$ sudo npm install forever -g` // install forever
+
+`$ cd /usr/lib/node_modules/node-red`  // change directory
+
+`$ forever start red.js --settings settings.js -v` // invoke forever script
+
+Setup Redis
+
+`$ cd $HOME` // change to Home directory
 
 `$ wget http://download.redis.io/redis-stable.tar.gz`
 

@@ -29,15 +29,15 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 `$ sudo npm install -g node-red` then `y`  // install node-red
 
-`$ cd $HOME/.node-red`  // change directory
+`$sudo npm cache clean -f` // clear npm cache
 
-`node-red-contrib-redis`  // install additional node via node-red panel
+`$ sudo npm install -g n` // to install nodejs version control
 
-`node-red-contrib-auth`   // install additional node via node-red panel
+`$ sudo n 6.10.0` // use nodejs 6.10.0 (required for node-red)
 
 Run Node-Red Manually or with Forever
 
-`$ node-red`  // to start manually  
+`$ sudo node-red`  // to start manually  
 
 or install `forever` and invoke `red.js` with it
 
@@ -46,6 +46,12 @@ or install `forever` and invoke `red.js` with it
 `$ cd /usr/lib/node_modules/node-red`  // change directory
 
 `$ forever start red.js --settings settings.js -v` // invoke forever script
+
+Add additional Nodes via Node-Red palette management
+
+`node-red-contrib-redis`  // install additional node via node-red panel
+
+`node-red-contrib-auth`   // install additional node via node-red panel
 
 Setup Redis
 

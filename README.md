@@ -85,6 +85,8 @@ Configure admin access
 
 `$ blockstack info`  // if this is the first time, it will initialize a new wallet, you will be prompted to save a password, DO NOT LOST THIS PASSWORD OR YOUR MASTER KEY
 
+`$ sudo rngd -r /dev/urandom` // might be required if you are having troubles generating the wallet (if it stalls out when creating the password)
+
 ***(Do not lose your master key and password)***
 
 ### Import & Setup Flow:

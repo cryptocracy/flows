@@ -77,7 +77,13 @@ Configure admin access
 
 `$ sudo apt-get update && sudo apt-get install -y python-pip python-dev libssl-dev libffi-dev rng-tools` // first install PIP & tools
 
+`$ sudo pip install --upgrade pip`  // install latest version (currently 9.0.1)
+
 `$ sudo pip install blockstack` // install Blockstack CLI
+
+`$ blockstack whois fredwilson.id` // do a whois lookup of fredwilson.id to test (you might be prompted to save your email to get notifications about blockstack updates, this is optional) ... assuming you eventually get the whois data of fredwilson.id move on.
+
+`$ blockstack info`  // if this is the first time, it will initialize a new wallet, you will be prompted to save a password, DO NOT LOST THIS PASSWORD OR YOUR MASTER KEY
 
 ***(Do not lose your master key and password)***
 

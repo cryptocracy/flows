@@ -5,14 +5,6 @@ This repo is basically a setup guide for a Node-Red instance to be turned into a
 
 The server needs to have Node-red, additonal nodes, Redis, and Blockstack installed, before the imported flow will run properly.
 
-# Additional Requirements Node-Red nodes:
-
-node-red-contrib-redis
-
-node-red-contrib-auth
-
-[api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json)
-
 # Warning:
 
 For these api end points to be used, the client application (Souq) must have the path to the server saved in its configuration.
@@ -70,3 +62,16 @@ Configure admin access
 `$ make`
 
 ## Setup Blockstack
+
+`$ `
+
+
+# Import Flow:
+
+[api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) // What to Import
+
+Configure the JWT node
+
+Deploy Changes
+
+Once your Preferred server is setup, point your Souq app at it & `Be the Change`.

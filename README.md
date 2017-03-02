@@ -3,7 +3,7 @@ This repo is basically just a node-red flow for you to import into your node-red
 
 # Requirements:
 
-The server needs to have node-red, redis, and blockstack installed.
+The server needs to have Node-red, additonal nodes, Redis, and Blockstack installed, before the imported flow will run properly.
 
 # Additional Requirements Node-Red nodes:
 

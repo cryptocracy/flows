@@ -1,7 +1,7 @@
 # Summary
-This repo contains a setup guide (this readme) and the [api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) `flow`.
+This repo contains a setup guide (this readme) and the [api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) "flow".
 
-The json file is a Node-Red `flow` that can be easily imported into your Node-Red instance after the prerequisites are met.
+The json file is a Node-Red "flow" that can be easily imported into your Node-Red instance after the prerequisites are met.
 
 # Prerequisites Summary:
 

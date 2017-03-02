@@ -35,7 +35,7 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 Run Node-Red Manually
 
-`$ sudo node-red`  // to start manually  
+`$ sudo node-red`  // to start manually [replace later with PM2] 
 
 Browse to Server Path
 
@@ -51,7 +51,7 @@ Configure admin access
 
 ... [insert details on how to reconfigure node red to force root to /admin and force admin auth]
 
-## Setup PM2 (to keep server alive)
+### Setup PM2 (to keep Node alive)
 
 `$ sudo npm install pm2 -g`  //install 
 

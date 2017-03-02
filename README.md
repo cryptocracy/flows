@@ -1,5 +1,5 @@
 # Summary
-This repo is basically a setup guide and a node-red flow for you to import into your node-red instance to turn it into a Preferred Server for Souq to sync up with.
+This repo is basically a setup guide for a Node-Red instance to be turned into a Preferred Server for a Souq app to sync up with.
 
 # Requirements:
 
@@ -19,9 +19,13 @@ For these api end points to be used, the client application (Souq) must have the
 
 # Requirement Setup Guide Overview
 
-This guide assumes that you are using Ubuntu 16.04. Before you begin, you should have a non-root user account with `sudo` privileges set up on your system. (THIS IS STILL BEING DOCUMENTED DO NOT USE YET)
+This guide assumes that you are using Ubuntu 16.04. Before you begin, you should have a non-root user account with `sudo` privileges set up on your system. (Still under construction)
+
+## Update 
 
 `$ sudo apt-get update` then `y`  // update 
+
+## Setup Node components
 
 `$ sudo apt-get install nodejs` then `y`  // install nodejs
 
@@ -43,13 +47,17 @@ Browse to Server Path
 
 example: `http://yoursubdomain.yoursite.com:1880` // if A record is already pointed at servers IP address, else use IP address.
 
-Add additional Nodes via Node-Red palette management
+Install additional Nodes via Node-Red palette management
 
 `node-red-contrib-redis`  // install additional node via node-red panel
 
 `node-red-contrib-auth`   // install additional node via node-red panel
 
-Setup Redis
+Configure admin access
+
+... [insert details on how to reconfigure node red to force root to /admin and force admin auth]
+
+## Setup Redis
 
 `$ cd $HOME` // change to Home directory
 
@@ -61,4 +69,4 @@ Setup Redis
 
 `$ make`
 
-(need forever/autorestart for redis - `$ redis-server` to start)
+## Setup Blockstack

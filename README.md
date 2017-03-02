@@ -1,7 +1,9 @@
 # Summary
-This repo is basically a setup guide for a Node-Red instance to be turned into a Preferred Server for a Souq app to sync up with.
+This repo contains a setup guide (this readme) and a json flow.
 
-# Requirements:
+The json file is a Node-Red `flow` that can be easily imported into your Node-Red instance after the prerequisites are met.
+
+# Prerequisites Summary:
 
 The server needs to have Node-red, additonal nodes, Redis, and Blockstack installed, before the imported flow will run properly.
 
@@ -9,7 +11,7 @@ The server needs to have Node-red, additonal nodes, Redis, and Blockstack instal
 
 For these api end points to be used, the client application (Souq) must have the path to the server saved in its configuration.
 
-# Requirement Setup Guide Overview
+# Prerequisites Setup Guide:
 
 This guide assumes that you are using Ubuntu 16.04. Before you begin, you should have a non-root user account with `sudo` privileges set up on your system. (Still under construction)
 
@@ -17,7 +19,7 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 `$ sudo apt-get update` then `y`  // update 
 
-## Setup Node components
+### Setup Node components
 
 `$ sudo apt-get install nodejs` then `y`  // install nodejs
 
@@ -49,7 +51,7 @@ Configure admin access
 
 ... [insert details on how to reconfigure node red to force root to /admin and force admin auth]
 
-## Setup Redis
+### Setup Redis
 
 `$ cd $HOME` // change to Home directory
 
@@ -61,12 +63,12 @@ Configure admin access
 
 `$ make`
 
-## Setup Blockstack
+### Setup Blockstack
 
 `$ `
 
 
-# Import Flow:
+### Import Flow:
 
 [api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) // What to Import
 

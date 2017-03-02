@@ -19,7 +19,7 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 `$ sudo apt-get update` then `y`  // update 
 
-### Setup Node components
+### Install Node components
 
 `$ sudo apt-get install nodejs` then `y`  // install nodejs
 
@@ -51,7 +51,7 @@ Configure admin access
 
 ... [insert details on how to reconfigure node red to force root to /admin and force admin auth]
 
-### Setup PM2 (to keep Node alive)
+### Install PM2 (to keep Node alive)
 
 `$ sudo npm install pm2 -g`  //install 
 
@@ -59,7 +59,7 @@ Configure admin access
 
 `$ sudo pm2 start red.js`  // Invoke Node-Red with PM2 [do not have it already running]
 
-### Setup Redis
+### Install Redis
 
 `$ cd $HOME` // change to Home directory
 
@@ -73,7 +73,7 @@ Configure admin access
 
 (insert base db setup steps here)
 
-### Setup Blockstack
+### Install Blockstack
 
 `$ sudo apt-get update && sudo apt-get install -y python-pip python-dev libssl-dev libffi-dev rng-tools` // first install PIP & tools
 
@@ -81,7 +81,7 @@ Configure admin access
 
 ***(Do not lose your master key and password)***
 
-### Import Flow:
+### Import & Setup Flow:
 
 [api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) // What to Import
 

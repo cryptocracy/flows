@@ -1,5 +1,5 @@
 # Summary
-This repo is basically just a node-red flow for you to import into your node-red instance to turn it into a Preferred Server node
+This repo is basically a setup guide and a node-red flow for you to import into your node-red instance to turn it into a Preferred Server for Souq to sync up with.
 
 # Requirements:
 

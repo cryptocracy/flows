@@ -51,6 +51,14 @@ Configure admin access
 
 ... [insert details on how to reconfigure node red to force root to /admin and force admin auth]
 
+## Setup PM2 (to keep server alive)
+
+`$ sudo npm install pm2 -g`  //install 
+
+`$ cd /usr/local/lib/node_modules/node-red`  // change directory
+
+`$ sudo pm2 start red.js`  // Invoke Node-Red with PM2 [do not have it already running]
+
 ### Setup Redis
 
 `$ cd $HOME` // change to Home directory

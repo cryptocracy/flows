@@ -15,7 +15,7 @@ For these api end points to be used, the client application (Souq) must have the
 
 This guide assumes that you are using Ubuntu 16.04. Before you begin, you should have a non-root user account with `sudo` privileges set up on your system. (Still under construction)
 
-## Update 
+### Update 
 
 `$ sudo apt-get update` then `y`  // update 
 

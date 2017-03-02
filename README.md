@@ -71,10 +71,15 @@ Configure admin access
 
 `$ make`
 
+(insert base db setup steps here)
+
 ### Setup Blockstack
 
-`$ `
+`$ sudo apt-get update && sudo apt-get install -y python-pip python-dev libssl-dev libffi-dev rng-tools` // first install PIP & tools
 
+`$ sudo pip install blockstack` // install Blockstack CLI
+
+***(Do not lose your master key and password)***
 
 ### Import Flow:
 

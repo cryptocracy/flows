@@ -1,15 +1,23 @@
-# Summary
-This repo contains a manual setup guide (this readme) and the [flows](https://github.com/cryptocracy/flows/blob/master/api-end-points.json).
+# Souq:
+
+For Souq to fully function the path to a preferred server needs to be saved in its configuration.
+
+# Overview
+
+A preferred server has custom a set of [api end points](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json). Built with Node-Red, some additonal nodes, Redis, and Blockstack. All working in unison to enable Souq users to Tag and Fund Projects while saving the Project details to an immutable ledger.
+
+This repo contains a manual setup guide (this readme) and the [flows](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json).
 
 The json file is a Node-Red "flow" that can be easily imported into your Node-Red instance after the prerequisites are met.
 
-Essentially the server needs to have Node-Red, its additonal nodes, Redis, and Blockstack all installed, before the flows will run properly.
+This repo will also be deployable via Docker. Refer to the Docker Setup Guide for Details.
 
-# Warning:
+# Docker Setup Guide:
 
-For these api end points to be used, the client application (Souq) must have the path to the server saved in its configuration.
+... insert docker setup steps here ...
 
-# Prerequisites Setup Guide:
+
+# Manual Setup Guide:
 
 This guide assumes that you are using Ubuntu 16.04. Before you begin, you should have a non-root user account with `sudo` privileges set up on your system. (Still under construction)
 
@@ -89,7 +97,7 @@ Configure admin access
 
 ### Import & Setup Flow:
 
-[api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) // What to Import
+[api-end-points.json](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json) // Flow to Manually Import
 
 Configure the JWT node with your Secret
 

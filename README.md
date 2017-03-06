@@ -1,11 +1,9 @@
 # Summary
-This repo contains a setup guide (this readme) and the [api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) "flow".
+This repo contains a setup guide (this readme) and the [flows](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) "flow".
 
 The json file is a Node-Red "flow" that can be easily imported into your Node-Red instance after the prerequisites are met.
 
-# Prerequisites Summary:
-
-The server needs to have Node-red, additonal nodes, Redis, and Blockstack installed, before the imported flow will run properly.
+Essentially the server needs to have Node-Red, its additonal nodes, Redis, and Blockstack all installed, before the flows will run properly.
 
 # Warning:
 

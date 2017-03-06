@@ -1,6 +1,6 @@
 # Souq:
 
-For Souq to fully function the path to a Preferred server needs to be saved in its configuration, this is how you setup one.
+For Souq to fully function the path to a Preferred server needs to be saved in its configuration, this is how you setup a Preferred server for the app to sync up with.
 
 # Overview
 

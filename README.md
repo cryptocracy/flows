@@ -8,9 +8,9 @@ A preferred server has a custom set of [api end points](https://github.com/crypt
 
 This repo contains a manual setup guide (this readme) and the [flows](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json).
 
-The json file is a Node-Red "flow" that can be easily imported into your Node-Red instance after the prerequisites are met.
+The json file is a Node-Red "flow" that can be easily imported into your existing Node-Red instance assuming the prerequisite nodes are installed as well as Redis and Blockstack.
 
-This repo will also be deployable via Docker. Refer to the Docker Setup Guide for Details.
+A Docker facilitated installation will be used to streamline the setup of all the components of a preferred server. (eg Blockstack, Redis, Node-Red with additional nodes and the flows for the Souq api end points) 
 
 # Docker Setup Guide:
 

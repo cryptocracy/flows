@@ -4,11 +4,11 @@ For Souq to fully function, the path & secret to a Preferred server needs to be 
 
 # Overview
 
-A preferred server has a custom set of [api end points](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json). Built with Node-Red, some additonal nodes, Redis, and Blockstack. All working in unison to enable Souq users to Tag and Fund Projects while saving the Project details to an immutable ledger.
+A preferred server has a custom set of flows for the [core api end points](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json). Built with Node-Red, some additonal nodes, Redis, and Blockstack. All working in unison to enable Souq users to Tag and Fund Projects while saving the Project details to an immutable ledger.
 
-This repo contains a manual setup guide (this readme) and the [flows](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json).
+This repo contains a manual setup guide & docker setup guide (this readme)
 
-The json file is a Node-Red "flow" that can be easily imported into your existing Node-Red instance assuming the prerequisite nodes are installed as well as Redis and Blockstack.
+The flows for the [core api end points](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json) can easily imported into your existing Node-Red instance assuming the prerequisite nodes are installed as well as Redis and Blockstack.
 
 A Docker facilitated installation will be used to streamline the setup of all the components of a preferred server. (eg Blockstack, Redis, Node-Red with additional nodes and the flows for the Souq api end points) 
 

@@ -1,5 +1,5 @@
 # Summary
-This repo contains a setup guide (this readme) and the [flows](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) "flow".
+This repo contains a manual setup guide (this readme) and the [flows](https://github.com/cryptocracy/flows/blob/master/api-end-points.json).
 
 The json file is a Node-Red "flow" that can be easily imported into your Node-Red instance after the prerequisites are met.
 
@@ -91,8 +91,8 @@ Configure admin access
 
 [api-end-points.json](https://github.com/cryptocracy/flows/blob/master/api-end-points.json) // What to Import
 
-Configure the JWT node
+Configure the JWT node with your Secret
 
 Deploy Changes
 
-Once your Preferred server is setup, point your Souq app at it & `Be the Change`.
+Use your secret to sync up Souq

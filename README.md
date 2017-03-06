@@ -1,6 +1,6 @@
 # Souq:
 
-For Souq to fully function the path to a preferred server needs to be saved in its configuration.
+For Souq to fully function the path to a Preferred server needs to be saved in its configuration, this repo is how you setup one.
 
 # Overview
 

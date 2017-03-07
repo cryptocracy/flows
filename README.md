@@ -77,7 +77,9 @@ Configure admin access
 
 `$ make`
 
-(insert base db setup steps here)
+You might need to install `tcl` via `$ sudo apt-get install tcl` before you are able `make test`.
+
+`$ make test`
 
 ### Install Blockstack
 

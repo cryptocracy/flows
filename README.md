@@ -69,11 +69,11 @@ Configure admin access
 
 `$ cd $HOME` // change to Home directory
 
-`$ wget http://download.redis.io/redis-stable.tar.gz`
+`$ wget http://download.redis.io/releases/redis-3.2.8.tar.gz`
 
-`$ tar xvzf redis-stable.tar.gz`
+`$ tar xvzf redis-3.2.8.tar.gz`
 
-`$ cd redis-stable`
+`$ cd redis-3.2.8`
 
 `$ make`
 

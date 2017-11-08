@@ -1,6 +1,6 @@
 # Souq:
 
-For Souq to fully function, the path & secret to a Preferred server needs to be saved in its configuration, this is how you setup a Preferred server for Souq to sync up with.
+For Souq to fully function, the path & secret to your Preferred node needs to be saved in its configuration, this is how you setup a Preferred server for Souq to sync up with.
 
 # Overview
 
@@ -91,7 +91,7 @@ You might need to install `tcl` via `$ sudo apt-get install tcl` before you are 
 
 `$ blockstack whois fredwilson.id` // do a whois lookup of fredwilson.id to test (you might be prompted to save your email to get notifications about blockstack updates, this is optional) ... assuming you eventually get the whois data of fredwilson.id move on.
 
-`$ blockstack info`  // if this is the first time, it will initialize a new wallet, you will be prompted to save a password, DO NOT LOST THIS PASSWORD OR YOUR MASTER KEY
+`$ blockstack info`  // if this is the first time, it will initialize a new wallet, you will be prompted to save a password, DO NOT LOSE THIS PASSWORD OR YOUR MASTER KEY
 
 `$ sudo rngd -r /dev/urandom` // might be required if you are having troubles generating the wallet (if it stalls out when creating the password)
 

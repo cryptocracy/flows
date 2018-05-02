@@ -48,9 +48,12 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 `$ sudo node-red`  // to start manually
 
-Browse to Server Path example: `http://yoursite.com:1880` to test
+Browse to Server Path example: `http://yoursite.com:1880` to test and make sure it loads the flows Editor.
 
-To enable user authentication on the Editor and Admin API, add the following to your `settings.js` file:
+
+### Require Admin Auth on Node-Red Editor 
+
+add the following to your `settings.js` file:
 
 ```
 adminAuth: {
@@ -66,6 +69,15 @@ The `users` property is an array of user objects. This allows you to define mult
 
 This example configuration defines a single user called `admin` who has permission to do everything within the editor and has a password of `password`.
 
+### Change Admin Auth on Node-Red Editor
+
+To generate a suitable password hash, you can use the `node-red-admin` command-line tool:
+
+`$ node-red-admin hash-pw`
+
+The tool will prompt you for the password you wish to use and then print out the hash that can be copied into the `settings.js` file.
+
+Note: I would love to see Node-Red Editor support Blockstack Auth directly.
 
 ### Install 3 additional Node-Red nodes via CLI 
 (or through the Node-Red palette management via the Editor http ui)

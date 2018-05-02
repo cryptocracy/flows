@@ -17,6 +17,7 @@ A Docker facilitated installation will be used to streamline the setup of all th
 ... insert docker setup steps here ...
 
 
+
 # Manual Setup Guide:
 
 This guide assumes that you are using Ubuntu 16.04. Before you begin, you should have a non-root user account with `sudo` privileges set up on your system. (Still under construction)
@@ -25,9 +26,15 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 `$ sudo apt-get update` then `y`  // update 
 
-### Install Node components
+
+### Install Node
+(nodeJS, version control, & Node-Red)
 
 `$ sudo apt-get install nodejs` then `y`  // install nodejs
+
+`$ sudo npm install -g n` // to install nodejs version control
+
+`$ sudo n 6.10.0` // switch to nodejs version 6.10.0 (required for node-red)
 
 `$ sudo apt-get install npm` then `y`  // install npm
 
@@ -35,29 +42,47 @@ This guide assumes that you are using Ubuntu 16.04. Before you begin, you should
 
 `$ sudo npm cache clean -f` // clear npm cache
 
-`$ sudo npm install -g n` // to install nodejs version control
 
-`$ sudo n 6.10.0` // switch to nodejs version 6.10.0 (required for node-red)
+### Test Run Node-Red
+(manually test, replace later with P2M)
 
-Run Node-Red Manually
+`$ sudo node-red`  // to start manually
 
-`$ sudo node-red`  // to start manually [replace later with PM2] 
+Browse to Server Path example: `http://yoursite.com:1880` to test
 
-Browse to Server Path
+To enable user authentication on the Editor and Admin API, add the following to your `settings.js` file:
 
-example: `http://yoursubdomain.yoursite.com:1880` // if A record is already pointed at servers IP address, else use IP address.
+```
+adminAuth: {
+    type: "credentials",
+    users: [{
+        username: "admin",
+        password: "$2a$08$zZWtXTja0fB1pzD4sHCMyOCMYz2Z6dNbM6tl8sJogENOMcxWV9DN.",
+        permissions: "*"
+    }]
+}
+```
+The `users` property is an array of user objects. This allows you to define multiple users, each of whom can have different permissions.
 
-Install additional Nodes via Node-Red palette management
+This example configuration defines a single user called `admin` who has permission to do everything within the editor and has a password of `password`.
 
-`node-red-contrib-redis`  // install additional node via node-red panel
 
-`node-red-contrib-auth`   // install additional node via node-red panel
+### Install 3 additional Node-Red nodes via CLI 
+(or through the Node-Red palette management via the Editor http ui)
 
-Configure admin access
+`$ cd $HOME/.node-red`  // change directory to the node-red user data directory
 
-... [insert details on how to reconfigure node red to force root to /admin and force admin auth]
+`$ npm install node-red-contrib-auth`   // install node-red jwt auth node via cli
 
-### Install PM2 (to keep Node alive)
+`$ npm install node-red-contrib-redis`  // install node-red redis node via cli
+
+`$ npm install node-red-node-mysql`  // install node-red mysql node via cli
+
+Note: You need to stop and start Node-Red for it to recognized any new nodes.
+
+
+### Install PM2 
+(to keep Node alive if not using docker)
 
 `$ sudo npm install pm2 -g`  //install 
 
@@ -65,7 +90,10 @@ Configure admin access
 
 `$ sudo pm2 start red.js`  // Invoke Node-Red with PM2 [do not have it already running]
 
-### Install Redis
+
+### Install Redis 
+
+(to geospatially index Project locations)
 
 `$ cd $HOME` // change to Home directory
 
@@ -81,7 +109,14 @@ You might need to install `tcl` via `$ sudo apt-get install tcl` before you are 
 
 `$ make test`
 
+### Install Mysql
+(to relationally index Project details)
+
+`$ ...`
+
+
 ### Install Blockstack
+(to read/write to/from Blockchain)
 
 `$ sudo apt-get update && sudo apt-get install -y python-pip python-dev libssl-dev libffi-dev rng-tools` // first install PIP & tools
 
@@ -99,10 +134,10 @@ You might need to install `tcl` via `$ sudo apt-get install tcl` before you are 
 
 ### Import & Setup Flow:
 
-[api-end-points.json](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json) // Flow to Manually Import
+[flows.json](https://github.com/cryptocracy/flows/blob/master/node-red/flows.json) // Flow to Manually Import
 
 Configure the JWT node with your Secret
 
 Deploy Changes
 
-Use your secret to sync up Souq
+Use JWT secret in Souq Full Mode Settings

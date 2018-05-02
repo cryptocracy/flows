@@ -23,7 +23,7 @@ EXPOSE 1880
 ENV FLOWS=flows.json
 
 # Install packages
-RUN npm install node-red-contrib-redis node-red-contrib-auth
+RUN npm install node-red-contrib-redis node-red-contrib-auth node-red-node-mysql
 
 # Install blockstack
 RUN apt-get update && apt-get install -y python-pip python-dev libssl-dev libffi-dev rng-tools

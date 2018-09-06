@@ -1,3 +1,5 @@
+# (Closed Beta is now over, this repo is deprecated)
+
 # Souq:
 
 For Souq to fully function, the path & secret to your Preferred node needs to be saved in its configuration, this is how you setup a Preferred server for Souq to sync up with.
